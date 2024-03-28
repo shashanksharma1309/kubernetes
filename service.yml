@@ -5,7 +5,7 @@ metadata:
   labels:
 
 spec:
-Selector: 
+selector: 
   app: new-app
   type: NodePort
 
