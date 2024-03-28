@@ -2,18 +2,21 @@ apiVersion: v1
 kind: Service
 metadata:
   name: demoservice
+  labels:
+
 spec:
 Selector: 
   app: new-app
   type: NodePort
-      ports:
-        - port: 80
-          targetPort: 80
-          name: nginx
-          protocol: TCP  
 
-        - port: 8080
-          targetPort: 8080
-          name: tomcat
-          protocol: TCP 
+ports:
+  -port: 80
+    targetPort: 80
+    name: nginx
+  -protocol: TCP  
+
+  -port: 8080
+    targetPort: 8080
+    name: tomcat
+  -protocol: TCP 
   
