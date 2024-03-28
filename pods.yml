@@ -6,13 +6,13 @@ metadata:
   app: new-app
 spec:
   containers:
-    - name: nginx
-      image: nginx:latest
-      ports:
-        - containerPort: 80
-          protocol: TCP  
-    - name: tomcat
-      image: tomcat:latest
-      ports:
-        - containerPort: 8080
-          protocol: TCP  
+  - name: nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+      protocol: TCP  
+  - name: tomcat
+    image: tomcat:latest
+    ports:
+    - containerPort: 8080
+      protocol: TCP  
