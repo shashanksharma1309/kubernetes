@@ -11,12 +11,12 @@ Selector:
 
 ports:
   -port: 80
-    targetPort: 80
-    name: nginx
+  targetPort: 80
+  name: nginx
   -protocol: TCP  
 
   -port: 8080
-    targetPort: 8080
-    name: tomcat
+  targetPort: 8080
+  name: tomcat
   -protocol: TCP 
   
