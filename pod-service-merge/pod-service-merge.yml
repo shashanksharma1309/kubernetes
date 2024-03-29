@@ -9,7 +9,6 @@ metadata:
 spec:
   containers:
   - name: nginx
-    namespace: killer
     image: nginx:latest
     ports:
     - containerPort: 80
