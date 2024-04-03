@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: nginxapp
-        image: tomcat:latest
+        image: nginx:latest
         ports:
         - containerPort: 80
           protocol: TCP
