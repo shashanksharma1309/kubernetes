@@ -8,8 +8,8 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 2
-      maxUnavailable: 6
+      maxSurge: 2            # Maximum number of pods that can be created over the desired replicas
+      maxUnavailable: 8     # Maximum number of pods that can be unavailable during the update
   selector:
     matchLabels:
       app: deployapp
