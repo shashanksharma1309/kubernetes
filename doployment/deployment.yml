@@ -9,7 +9,7 @@ spec:
     type: RollingUpdate
     rollingUpdate:
       maxSurge: 2
-      maxUnavailable: 4
+      maxUnavailable: 6
   selector:
     matchLabels:
       app: deployapp
