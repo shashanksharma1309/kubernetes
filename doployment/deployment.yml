@@ -21,8 +21,8 @@ spec:
         app: deployapp
     spec:
       containers:
-      - name: nginxapp
-        image: nginx:latest
+      - name: tomcat
+        image: tomcat:latest
         ports:
         - containerPort: 80
           protocol: TCP
